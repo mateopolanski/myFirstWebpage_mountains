@@ -1,0 +1,150 @@
+/*Resetujemy marginesy wewnętrzne i zewnetrzne i określamy domyślny font na Roboto*/
+
+* {
+    padding: 0;
+    margin: 0;
+    
+    font-family: Roboto, arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+   /* background-color: #ddb; */
+background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 31%, rgba(255,255,255,1) 48%, rgba(254,141,84,1) 100%);
+margin-top: 5px;
+    
+}
+
+
+/*Kontener zbiorczy - często stosowana praktyka */
+
+#wrapper {
+    max-width: 1000px;
+    /* wypełniaj 100% miejsca ale nie więcej niż 1000 px szerokości*/
+    margin: 0 auto 10px;
+    /* 10px marginesu na dole oraz wyśrodkowanie*/
+    background-color: white;
+}
+
+
+
+
+/*obrazek w headerze */
+
+#imgHeader {
+    width: 100%;
+    max-height: 300px;
+    display: block;
+}
+
+.home.main p {
+    text-align: justify;
+    line-height: 25px;
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+nav {
+    overflow: hidden;
+    position: sticky; 
+    /* przyklejone menu */
+    top: 20px;
+}
+
+nav a {
+    display: block;
+    width: 25%;
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: darkcyan;
+    padding: 15px 30px;
+    /*border-radius: 25px;*/
+    font-size: 20px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+   
+    
+}
+
+nav a:hover {
+    background-color: crimson;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Creepster', cursive, 'Roboto';
+    text-align: center;
+    width: auto;
+    margin: 0 10%;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid crimson;
+}
+
+@media (max-width:800px) {
+    nav a {
+        width: 50%;
+        font-size: 22px;
+    }
+    h1 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width:500px) {
+    nav a {
+        width: 100%;
+    }
+}
+
+
+/*nagłówek */
+
+
+/*obrazek mały*/
+
+img.left {
+    float: left;
+    width: 25%;
+    padding: 0px 10px 10px 0px;
+    border-radius: 50% 30%;
+}
+
+
+/*style dla stopki */
+
+#wrapper iframe {
+    width: 100%;
+    margin-top: 20px;
+}
+
+article {
+    padding: 0 20px;
+}
+
+footer {
+    height: 40px;
+    background-color: darkcyan;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+/*dla strony, która jest otwarta w przeglądarce */
+
+.active {
+    /*background-color: crimson;*/
+    background-color: crimson;
+    
+}
+
+.main {
+    margin-top: 30px;
+}
+
